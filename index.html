@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore - Início</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>TechStore</h1>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="carrinho.html">
+        Carrinho (<span id="contador-carrinho">0</span>)
+      </a>
+      <a href="relatorio.html">Relatório</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <h2>Bem-vindo à TechStore</h2>
+
+      <p>
+        Os melhores produtos de tecnologia para sua rotina,
+        estudos, trabalho e games.
+      </p>
+
+      <a href="produtos.html" class="btn">
+        Ver produtos
+      </a>
+    </section>
+
+    <section class="destaques">
+      <h2>Produtos em destaque</h2>
+
+      <div class="grid-produtos">
+
+        <div class="card-produto">
+
+          <img
+            src="https://images.unsplash.com/photo-1527814050087-3793815479db?q=80&w=1200&auto=format&fit=crop"
+            alt="Mouse Gamer">
+
+          <h3>Mouse Gamer RGB</h3>
+
+          <p>
+            Mouse com sensor de alta precisão e iluminação RGB.
+          </p>
+
+          <p class="preco">R$ 99,90</p>
+
+          <button onclick="adicionarProduto(1)">
+            Comprar agora
+          </button>
+
+        </div>
+
+        <div class="card-produto">
+
+          <img
+            src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?q=80&w=1200&auto=format&fit=crop"
+            alt="Teclado Mecânico">
+
+          <h3>Teclado Mecânico</h3>
+
+          <p>
+            Teclado gamer com switches mecânicos e iluminação LED.
+          </p>
+
+          <p class="preco">R$ 199,90</p>
+
+          <button onclick="adicionarProduto(2)">
+            Comprar agora
+          </button>
+
+        </div>
+
+        <div class="card-produto">
+
+          <img
+            src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=1200&auto=format&fit=crop"
+            alt="Headset Gamer">
+
+          <h3>Headset Gamer</h3>
+
+          <p>
+            Headset confortável com áudio imersivo e microfone HD.
+          </p>
+
+          <p class="preco">R$ 149,90</p>
+
+          <button onclick="adicionarProduto(3)">
+            Comprar agora
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+    <section class="servicos">
+      <h2>Também oferecemos manutenção</h2>
+    
+      <p>
+        Além da venda de produtos tecnológicos, a TechStore também oferece serviços
+        de manutenção em computadores, notebooks e periféricos.
+      </p>
+    
+      <p>
+        Fazemos limpeza, formatação, troca de peças, instalação de programas,
+        diagnóstico de problemas e melhorias de desempenho.
+      </p>
+    
+      <a href="contato.html" class="btn">Solicitar manutenção</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2026 TechStore - Todos os direitos reservados.
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
